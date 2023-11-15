@@ -280,6 +280,15 @@ public class Arrays {
         return result;
     }
 
+    static boolean in(int[] a, int n){
+        for (int i = 0; i<a.length;i++){
+            if (n == a[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+
     //------------------------------------------------------------------------------------------------------------------
     // Arrays mehrdimensional:
 
