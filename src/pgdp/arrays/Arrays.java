@@ -283,10 +283,12 @@ public class Arrays {
     //------------------------------------------------------------------------------------------------------------------
     // Arrays mehrdimensional:
 
-    public static void print(int[][] a) {
-        for (int i = 0; i < a.length; i++) {
-            print(a[i]);
+    static void print(int[][] a) {
+        System.out.println("[");
+        for (int[] b: a) {
+            System.out.println("\t" + java.util.Arrays.toString(b));
         }
+        System.out.println("]");
     }
 
     static int[][] minsAndMaxs(int[][] a) {
